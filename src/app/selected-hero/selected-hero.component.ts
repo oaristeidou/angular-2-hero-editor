@@ -8,8 +8,4 @@ import {Hero} from "../app.hero";
 })
 export class SelectedHeroComponent{
   @Input() selectedHero:Hero;
-
-  constructor() {
-  }
-
 }

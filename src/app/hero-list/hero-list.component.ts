@@ -12,7 +12,6 @@ export class HeroListComponent {
 
   constructor() {
     this.heroes = HEROES;
-    this.selectedHero = new Hero ();
   }
 
   onSelect(hero: Hero): void {
