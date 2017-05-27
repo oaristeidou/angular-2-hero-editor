@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component} from '@angular/core';
 import {Hero} from "../app.hero";
 
 @Component({
@@ -7,11 +7,18 @@ import {Hero} from "../app.hero";
   styleUrls: ['./hero-list.component.css']
 })
 export class HeroListComponent {
+  selectedHero: Hero;
   heroes: Hero[];
 
   constructor() {
     this.heroes = HEROES;
+    this.selectedHero = new Hero ();
   }
+
+  onSelect(hero: Hero): void {
+    this.selectedHero = hero;
+  }
+
 
 }
 

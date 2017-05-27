@@ -1,6 +1,7 @@
 <h2>My Heroes</h2>
 <ul class="heroes">
-  <li *ngFor="let hero of heroes">
+  <li *ngFor="let hero of heroes" (click)="onSelect(hero)">
     <app-hero [hero]="hero"></app-hero>
   </li>
+  <app-selected-hero [selectedHero]="selectedHero"></app-selected-hero>
 </ul>
