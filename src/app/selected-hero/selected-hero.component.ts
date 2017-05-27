@@ -10,7 +10,6 @@ export class SelectedHeroComponent{
   @Input() selectedHero:Hero;
 
   constructor() {
-    this.selectedHero = new Hero ();
   }
 
 }
